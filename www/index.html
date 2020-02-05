@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" 
+    content="default-src 'self' data: gap://ready 'unsafe-eval'; 
+    style-src 'self' 'unsafe-inline'; 
+    media-src *; 
+    script-src 'self' 'unsafe-inline';
+    img-src 'self' data: content:;">
+<meta name="format-detection" content="telephone=no">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>ReviewR Starter Code</title>
+    <link rel="stylesheet" href="./css/index1.css" />
+  </head>
+  <body>
+    <section class="page active" id="home">
+      <header>
+        <h1>Reviews</h1>
+        <img src="./img/add.svg" id="btnAdd" data-target="add">
+      </header>
+      <main class="sample">
+        <ul class="review-list">
+          <!-- list of saved reviews gets added here -->
+        </ul>
+      </main>
+    </section>
+    <section class="page" id="details">
+      <header>
+        <img src="./img/camera-back.svg" id="btnDetailsBack" data-target="home">
+        <h1>Details</h1>
+      </header>
+      <main>
+       <figure>
+       <img src="" alt="detailed image" id="imgDetails" />
+       <figcaption>
+         
+         <p class="item">Item Name</p>
+         <p><span></span>/5</p>
+        </figcaption>
+      </figure> 
+      <button id="btnDelete">Delete</button>
+      </main>
+    </section>
+    <section class="page" id="add">
+      <header>
+        <img src="./img/camera-back.svg" id="btnAddBack" data-target="home">
+        <h1>Add new Review</h1>
+      </header>
+      <main>
+        <div class="photo-button">
+          <img src="./img/camera.svg" alt="camera" id="take">
+          <p class="foot">Please click here to take a picture</p>
+        </div>
+        <div class="photo-form">
+          <p><img src="" alt="clicked image" id="imgAdd" /></p>
+          <p>
+            <label for="name">
+              <input type="text" id="name" placeholder="Item Name"
+            /></label>
+          </p>
+          <p>
+            <div class="stars" data-rating="3">
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+          </div>
+          </p>
+          <p><button id="btnSave">Save Review</button>
+            </p>
+        </div>
+      </main>
+    </section>
+    <script src="cordova.js"></script>
+    <script src="./js/index1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.algonquin.smit1888.reviewr" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>smit1888-reviewr</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="smit1888@algonquinlive.com" href="http://cordova.io">
+        Smit Beladiya
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+
+                <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need camera access to take pictures</string>
+</edit-config>
+<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need photo library access to get pictures from there</string>
+</edit-config>
+<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need location access to find things nearby</string>
+</edit-config>
+<edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need photo library access to save pictures there</string>
+</edit-config>
+
+<icon density="mdpi" src="/res/icon/ios/Artboard1.png" />
+<icon density="hdpi" src="/res/icon/ios/Artboard2.png" />
+<icon density="xhdpi" src="/res/icon/ios/Artboard3.png" />
+<icon density="xxhdpi" src="/res/icon/ios/Artboard4.png" />
+<icon density="xxxhdpi" src="/res/icon/ios/Artboard5.png" />
+
+<splash src="/res/screen/ios/Artboard2.png" density="land-mdpi"/>
+<splash src="/res/screen/ios/Artboard2.png" density="land-hdpi"/>
+<splash src="/res/screen/ios/Artboard2.png" density="land-xhdpi"/>
+<splash src="/res/screen/ios/Artboard2.png" density="land-xxhdpi"/>
+<splash src="/res/screen/ios/Artboard2.png" density="land-xxxhdpi"/>
+ 
+<splash src="/res/screen/ios/Artboard1.png" density="port-mdpi"/>
+<splash src="/res/screen/ios/Artboard1.png" density="port-hdpi"/>
+<splash src="/res/screen/ios/Artboard1.png" density="port-xhdpi"/>
+<splash src="/res/screen/ios/Artboard1.png" density="port-xxhdpi"/>
+<splash src="/res/screen/ios/Artboard1.png" density="port-xxxhdpi"/>
+ 
+<preference name="AutoHideSplashScreen" value="true" />
+<preference name="SplashScreenDelay" value="5000" />
+
+    </platform>
+</widget>
